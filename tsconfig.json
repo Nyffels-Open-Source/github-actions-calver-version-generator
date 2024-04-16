@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "module": "AMD",
+    "lib": ["ES2022"],
+    "rootDir": "./src/",
+    "outFile": "./dist/index.js"
+  }
+}

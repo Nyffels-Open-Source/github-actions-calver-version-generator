@@ -1,0 +1,20 @@
+on: 
+  push: 
+    branches: ['main']
+
+  jobs: 
+    build:
+      runs-on: ubuntu-latest
+      name: 'Local test'
+      steps: 
+        - name: Fetch Repo Code 
+          uses: actions/checkout@v4
+
+        - name: Set Version 
+          uses: ./ 
+          id: calvergenerator
+          with: 
+            default_branch: 'refs/heads/main'
+            format: 'YYYYMMDD'
+            version_prefix: 'v'
+        

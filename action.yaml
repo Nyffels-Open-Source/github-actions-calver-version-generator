@@ -1,0 +1,24 @@
+name: 'Generate Calver Version'
+description: 'Calculate Calver version and set VERSION environment variables.'
+inputs:
+  prefix:
+    default: ''
+    required: false
+    description: 'Version prefix'
+  suffix:
+    default: ''
+    required: false
+    description: 'Version suffix'
+  format:
+    default: 'YYYYMMDD'
+    required: true
+    description: 'Day.js compatible date format string'
+outputs:
+  version:
+    description: 'The version number'
+runs:
+  using: 'node20'
+  main: 'dist/index.js'
+branding:
+  icon: bookmark
+  color: red
