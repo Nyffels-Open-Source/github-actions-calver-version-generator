@@ -7,6 +7,7 @@ async function run() {
     const prefix = core.getInput("prefix") ?? "";
     const suffix = core.getInput("suffix") ?? "";
     const format = core.getInput("format") ?? "YYYYMMDD";
+    const subversion = core.getInput("build") ?? "build";
     const buildNumber = github.context.runNumber;
 
     const currentDate = new Date().toUTCString();
@@ -16,6 +17,12 @@ async function run() {
     }
     if (suffix.length > 0) {
       versionStr += suffix;
+    }
+
+    switch (subversion) {
+      default: {
+        versionStr += `.${buildNumber}`;
+      }
     }
 
     core.exportVariable("VERSION", versionStr);
