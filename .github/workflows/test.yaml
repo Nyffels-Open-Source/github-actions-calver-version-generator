@@ -14,7 +14,6 @@ jobs:
       - name: Build
         run: |
           npm i
-          npx tsc
 
       - name: Set Version 
         uses: ./ 

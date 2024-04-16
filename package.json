@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "A simple action that generates a calver number.",
   "main": "index.js",
-  "scripts": {
-    "package": "node ./node_modules/@vercel/ncc/dist/ncc/cli.js build src/index.js -o dist"
-  },
   "keywords": [],
   "author": {
     "email": "chesney@nyffels.be",
