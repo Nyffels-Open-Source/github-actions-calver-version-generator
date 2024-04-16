@@ -14,7 +14,6 @@ on:
           uses: ./ 
           id: calvergenerator
           with: 
-            default_branch: 'refs/heads/main'
             format: 'YYYYMMDD'
-            version_prefix: 'v'
+            prefix: 'v'
         
