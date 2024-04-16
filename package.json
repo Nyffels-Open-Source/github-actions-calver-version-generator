@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "A simple action that generates a calver number.",
   "main": "index.js",
+  "scripts": {
+    "build": "tsc --build"
+  },
   "keywords": [],
   "author": {
     "email": "chesney@nyffels.be",

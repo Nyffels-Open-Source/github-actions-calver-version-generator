@@ -1,6 +1,6 @@
 import * as core from "@actions/core";
 import * as github from "@actions/github";
-import * as dayjs from "dayjs";
+import dayjs from "dayjs";
 
 async function run() {
   try {
