@@ -22,4 +22,8 @@ jobs:
         with: 
           format: 'YYYYMMDD'
           prefix: 'v'
+
+      - name: Get version
+        run: |
+          echo "The version was ${{ steps.calvergenerator.outputs.version }}"
         
