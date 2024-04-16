@@ -1,6 +1,6 @@
 {
   "name": "github-actions-calver-generator",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A simple action that generates a calver number.",
   "main": "index.js",
   "scripts": {

@@ -10,11 +10,6 @@ jobs:
     steps: 
       - name: Fetch Repo Code 
         uses: actions/checkout@v4
-        
-      - name: Build
-        run: |
-          npm i
-          npm run build
 
       - name: Set Version 
         uses: ./ 
