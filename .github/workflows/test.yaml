@@ -9,7 +9,7 @@ jobs:
     name: 'Local test'
     steps: 
       - name: Fetch Repo Code 
-        uses: actions/checkout@
+        uses: actions/checkout@v4
         
       - name: Build
         run: |
