@@ -13,6 +13,10 @@ inputs:
     default: 'YYYYMMDD'
     required: true
     description: 'Day.js compatible date format string'
+  subversion: 
+    default: 'build'
+    required: false
+    description: 'Type of subversioning. You can chose between build'
 outputs:
   version:
     description: 'The version number'
